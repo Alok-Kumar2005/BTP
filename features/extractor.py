@@ -189,11 +189,16 @@ def extract_features(domain: str)-> Dict[str, Any]:
         "numeric_percentage": f_numeric_percentage,
     }
 
-def get_feature_names():
+def get_feature_values():
     dummy = extract_features("www.takshpatel.com")
     print(len(dummy))
     for key, value in dummy.items():
         print(key, value)
+
+def get_feature_names():
+    dummy = extract_features("www.takshpatel.com")
+    return list(dummy.items())
+
 
 
 if __name__ == "__main__":
