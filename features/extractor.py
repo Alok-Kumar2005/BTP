@@ -197,7 +197,7 @@ def get_feature_values():
 
 def get_feature_names():
     dummy = extract_features("www.takshpatel.com")
-    return list(dummy.items())
+    return list(dummy.keys())
 
 
 
